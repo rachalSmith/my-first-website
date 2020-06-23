@@ -1,51 +1,76 @@
-.container{
+.container {
   display:grid;
   grid-auto-columns: repeat (10, 1fr);
   grid-auto-rows: repeat (10, 1fr);
   grid-template-areas:
-  "lhd hd hd hd hd hd ic sd sd sd"
-  "lhd hd hd hd hd hd ic sd sd sd"
-  "lhd nv nv nv nv nv nv sd sd sd"
-  "main main main main main main main sd sd sd"
-  "ft ft ft ft ft ft ft sd sd sd";
+  "lhd ic ic ic ic ic ic ic sd sd"
+  "lhd hd hd hd hd hd hd hd sd sd"
+  "lhd nv nv nv nv nv nv nv sd sd"
+  "main main main main main main main main sd sd"
+  "ft ft ft ft ft ft ft ft sd sd";
   border: 1px solid red;
   grid-gap: 1fr;
   padding: 0.5%;
   text-align: center;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;;
   font-size: 1.5em;
+  color: rgb(32, 33, 33);
+  text-shadow: 1px 1px #fff;
+  background-image: url("../images/succulents.jpg");
+  background-size: cover;
 }
 
-.box{
+.box {
   border: 1px solid orange;
-  background: #F8FA9D;
 }
 
-.header{
+.header {
   grid-area:hd;
 }
 
-.icon{
+.icon {
   grid-area:ic;
 }
 
-.navigation{
-  grid-area:nv;
+.socialIcon {
+width:25px;
+height: 25px;
+float: right;
+margin-top: 5px;
+margin-right: 40px;
 }
 
-.logo{
+.socialIcon:hover {
+  opacity: 0.5;
+}
+
+.navigation {
+  grid-area:nv;
+  font-size: 0.5em;
+  word-spacing: 4em;
+}
+
+.logo {
   grid-area:lhd;
 }
 
-.footer{
+#logoImg {
+  width: 80px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
   grid-area:ft;
 }
 
-.sidebar{
+.sidebar {
   grid-area:sd;
   z-index: -1;
 }
 
-.content{
+.content {
   grid-area:main;
   border: solid yellow;
   display: grid;
@@ -53,41 +78,46 @@
   grid-template-rows: auto;
 }
 
-#nested{
+#nested {
   border: solid green;
 }
 
-#nestedWater{
+#nestedWater {
   border: solid indigo;
 }
 
-#nestedLight{
+#nestedLight {
   border: solid blue;
 }
 
-#nestedNutrients{
+#nestedNutrients {
   border: solid violet;
 }
 
-.water{
+.water {
   width:auto;
   height: auto;
   border: solid black;
 }
 
-.light{
+.light {
   width:auto;
   height: auto;
   border: solid black;
 }
 
-.nutrients{
+.nutrients {
   width:auto;
   height: auto;
   border: solid black;
 }
 
-@media(min-width: 1024px){
+/*this id changes the text in boxes to green*/
+#title {
+  color: rgb(35, 81, 35);
+}
+
+@media(min-width: 1024px) {
   #nested{
     display: flex;
     flex-direction: row;
