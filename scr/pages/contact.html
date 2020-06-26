@@ -4,29 +4,28 @@
     <title>Contact page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href= "../styles/stylesheet.css" rel= "stylesheet">
+    <link href="../styles/stylesheet.css" rel="stylesheet">
   </head>
-
 
 <body>
 
-  <div class = "container">
-    <div id= "title" class= "header box">
+  <div class="container">
+    <div class="title header box">
       <h4>House Plant Basics</h4>
       <h6><em>The fundamentals of house plant care,<br>
       put simply.</em></h6>
     </div>
 
-    <div class = "icon box">
+    <div class="icon box">
       <a href="https://www.pinterest.co.uk/">
-      <img src="../images/pintrest.png" class = "socialIcon" alt="Pintrest icon">
+        <img src="../images/pintrest.png" class="socialIcon" alt="Pintrest icon">
       </a>
       <a href="https://www.instagram.com/">
-      <img src="../images/instagram.png" class = "socialIcon" alt="Instagram icon">
-      <a/>
+        <img src="../images/instagram.png" class="socialIcon" alt="Instagram icon">
+      </a>
     </div>
 
-    <div class= "navigation box">
+    <div class="navigation box">
     <p><a href="../index.html">Home</a>
       <a href="about.html">About</a>
       <a href="info-watering.html">Watering</a>
@@ -36,22 +35,40 @@
     </p>
     </div>
 
-    <div class= "logo box">
+    <div class="logo box">
       <a href="../index.html">
-      <img src="../images/logo-min.png" id="logoImg" alt="House Plant Basics logo">
+        <img src="../images/logo-min.png" id="logoImg" alt="House Plant Basics logo">
       </a>
     </div>
 
-    <div class= "sidebar box">Sidebar</div>
-    <div class= "content box">contact</div>
+    <div class="sidebar box"></div>
+    
+    <div class="contact content box">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="question">What's your question?</label>
+        <input type="text" id="question" name="question" placeholder="I would like to know...">
+        <button><a href="mailto:someone@plantsPlantsPlants.com">Submit</a></button>
+      </form>
+    </div>
 
-    <div class="footer box"> &copy; Me. Forever and ever and ever.
-      <a href="https://www.pinterest.co.uk/">
-      <img src="../images/pintrest.png" class = "socialIcon" alt="Pintrest icon">
-      </a>
-      <a href="https://www.instagram.com/">
-      <img src="../images/instagram.png" class = "socialIcon" alt="Instagram icon">
-      <a/>
+    <div class="footer box">
+      <div id="footerItems">
+        <div>&copy; Me. Forever and ever.<br>
+           DON'T TOUCH MY STUFF.
+        </div>
+        <div>
+          <a href="https://www.pinterest.co.uk/">
+            <img src="../images/pintrest.png" class="socialIcon" alt="Pintrest icon">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="../images/instagram.png" class="socialIcon" alt="Instagram icon">
+          </a>
+        </div>
+      </div>
     </div>
 
   </div>
