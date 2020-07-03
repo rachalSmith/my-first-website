@@ -1,5 +1,5 @@
 /*Contains styling for media-queries page.
-For all shared styling, go to main-styles*/
+For styling shared accross more than one page, go to main-styles*/
 
 @media(max-width: 1024px) {
   .indexBox {

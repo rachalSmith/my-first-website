@@ -18,7 +18,7 @@ interact with more than one element*/
   font-size: 1.3em;
   line-height: 1.6;
   text-shadow: 1px 1px #fff;
-  background-image: url("../images/succulents.jpg");
+  background-image: url("../../images/succulents.jpg");
   background-size: cover;
 }
 
@@ -67,7 +67,6 @@ nutrients pages*/
 
 button {
   border: rgb(212, 228, 200);
-  padding: 8px;
   background-color: white;
   cursor: pointer;
   width: 100%;
