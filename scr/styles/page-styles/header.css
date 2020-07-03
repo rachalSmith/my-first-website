@@ -1,0 +1,20 @@
+/*Contains styling for header of html pages.
+For all shared styling, go to main-styles*/
+
+header {
+  display: grid;
+  grid-area: hd;
+}
+
+.icon {
+  grid-area:ic;
+}
+
+#logoImg {
+  width: 90px;
+  margin-top: 30px;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 1;
+}

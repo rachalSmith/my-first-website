@@ -1,0 +1,112 @@
+/*Contains styling for the container and classes that
+interact with more than one element*/
+
+.container {
+  display:grid;
+  grid-auto-columns: repeat (10, 1fr);
+  grid-auto-rows: repeat (10, 1fr);
+  grid-template-areas:
+  "sd sd sd hd hd hd hd hd hd hd hd hd ic"
+  "sd sd sd hd hd hd hd hd hd hd hd hd ic"
+  "nv nv nv nv nv nv nv nv nv nv nv nv nv"
+  "main main main main main main main main main main main main main"
+  "ft ft ft ft ft ft ft ft ft ft ft ft ft";
+  grid-gap: 1fr;
+  padding: 0.5%;
+  text-align: center;
+  font-family: "Abel", Times, serif;
+  font-size: 1.3em;
+  line-height: 1.6;
+  text-shadow: 1px 1px #fff;
+  background-image: url("../images/succulents.jpg");
+  background-size: cover;
+}
+
+.box {
+    margin: 1%;
+}
+
+.title {
+  color: rgb(0, 161, 132);
+}
+
+/*Social icons in header and footer*/
+.socialIcon {
+width:25px;
+height: 25px;
+float: right;
+margin-top: 5px;
+margin-right: 40px;
+}
+
+.socialIcon:hover {
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(178, 130, 2);
+  font-weight: bold;
+}
+
+.sidebar {
+  grid-area: sd;
+}
+
+.content {
+  display: grid;
+  grid-area: main;
+}
+
+/*Keeps space between content on info - water, light and
+nutrients pages*/
+.nested {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+button {
+  border: rgb(212, 228, 200);
+  padding: 8px;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+input[type=text], select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+  padding: 20px 100px;
+  margin: 6% 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+figcaption: {
+  font-style: italic;
+  font-size: 1.2em;
+}

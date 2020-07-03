@@ -1,0 +1,49 @@
+/*Contains styling for index html page.
+For all shared styling, go to main-styles*/ 
+
+.indexBox {
+  display:grid;
+  grid-auto-columns: repeat (6, 1fr);
+  grid-auto-rows: repeat (6, 1fr);
+  grid-template-areas:
+  "top top top"
+  "left middle right";
+  grid-gap: 1fr;
+  padding: 0.5%;
+  text-align: center;
+}
+
+.indexText {
+  display: grid;
+  grid-area: top;
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+#indexWaterCard {
+  display: grid;
+  grid-area: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 6%;
+}
+
+#indexWaterImg {
+  width:180px;
+  margin: auto;
+  padding: 6%;
+}
+
+#indexLightCard {
+  display: grid;
+  grid-area: middle;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 6%;
+}
+
+#indexNutrientCard {
+  display: grid;
+  grid-area: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 6%;
+}

@@ -1,0 +1,9 @@
+/*Contains styling for light html page.
+For all shared styling, go to main-styles*/
+
+.contact {
+  margin: auto;
+  padding: 6%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 60%;
+}

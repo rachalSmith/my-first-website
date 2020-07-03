@@ -1,0 +1,46 @@
+/*Contains styling for media-queries page.
+For all shared styling, go to main-styles*/
+
+@media(max-width: 1024px) {
+  .indexBox {
+    display:grid;
+    grid-auto-columns: repeat (4, 1fr);
+    grid-auto-rows: repeat (6, 1fr);
+    grid-template-areas:
+    "top"
+    "upperMiddle"
+    "lowerMiddle"
+    "bottom";
+    grid-gap: 1fr;
+    padding: 0.5%;
+    text-align: center;
+  }
+
+  .indexText {
+    display: grid;
+    grid-area: top;
+    max-width: 60%;
+    margin: auto;
+  }
+
+  #indexWaterCard {
+    display: grid;
+    grid-area: upperMiddle;
+  }
+
+  #indexLightCard {
+    display: grid;
+    grid-area: lowerMiddle;
+  }
+
+  #indexNutrientCard {
+    display: grid;
+    grid-area: bottom;
+  }
+}
+
+@media(max-width: 600px) {
+  #logoImg {
+    width: 40px;
+  }
+}

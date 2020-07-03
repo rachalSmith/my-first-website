@@ -1,0 +1,31 @@
+/*Contains styling for about html page.
+For all shared styling, go to main-styles*/
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: 12px;
+  padding-top: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+#cardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cardTitle {
+  color: black;
+  text-shadow: 0px 0px #fff;
+  background-color: white;
+  padding: 16px;
+}
+
+#meImg {
+  width:180px;
+}

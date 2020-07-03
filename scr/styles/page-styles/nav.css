@@ -1,0 +1,7 @@
+/*Contains styling for navigation bar.
+For all shared styling, go to main-styles*/
+
+nav {
+  grid-area: nv;
+  word-spacing: 4em;
+}

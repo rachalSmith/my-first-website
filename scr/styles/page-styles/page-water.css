@@ -1,0 +1,9 @@
+/*Contains styling for community html page.
+For all shared styling, go to main-styles*/
+
+.water {
+  width: auto;
+  height: auto;
+  border: solid rgb(35, 81, 35);
+  padding: 1em;
+}
